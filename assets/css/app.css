@@ -167,47 +167,6 @@
     transform: translateY(0)
 }
 
-
-/*@media only screen and (min-width:641px) {
-    .bb-year-select {
-        width: 88px;
-    }
-    .bb-month-select {
-        width: 66px;
-    }
-}*/
-
-.bb-select li {
-    padding: 0 5px;
-}
-
-.bb-select li select {
-    min-width: 95px;
-}
-
-.bb-table-main {
-    font-size: 1.4rem;
-}
-
-.bb-table-disabled {
-    background: rgb(247, 247, 247);
-    color: rgb(82, 82, 82);
-    text-align: right;
-}
-
-.bb-nodata {
-    margin: 50px auto;
-    width: 133px;
-    height: 125px;
-    background: url(../img/nodata.png) center center no-repeat;
-}
-
-
-/*.bb-geo-container select {
-    display: inline-block;
-    min-width: 127px;
-}*/
-
 .toggle-off {
     background: url(../img/toggle.png) no-repeat;
 }
@@ -257,31 +216,10 @@ hr {
     margin-bottom: 10px;
 }
 
-.bb-form-row {
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-.bb-form-row .bb-form-item {
-    float: left;
-    margin-right: 30px;
-}
-
-.bb-form-row .bb-form-item>label {
-    float: left;
-    font-weight: 400;
-    margin-top: 7px;
-}
-
-.bb-form-row .bb-form-item>input {
-    float: left;
-    width: 160px
-}
-
-.bb-form-row .bb-form-item>.bb-input-group {
-    float: left;
-    width: 160px
-}
-.am-table>tbody>tr>td{
+.am-table>tbody>tr>td {
     padding: 2.1rem .7rem;
+}
+
+.e-select-sm {
+    padding: .6rem 1.5rem .6rem .6rem !important;
 }

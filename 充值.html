@@ -40,48 +40,6 @@
     <div class="am-cf admin-main">
         <!-- sidebar start -->
         <div class="J_menu admin-sidebar am-offcanvas" id="admin-offcanvas">
-            <div class="am-offcanvas-bar admin-offcanvas-bar">
-                <ul class="am-list admin-sidebar-list">
-                    <li class="admin-parent"><a class="am-cf" data-am-collapse="{target: '#collapse-nav-0'}"><span class="iconfont icon-01jixiegongying"></span> 车源管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list admin-sidebar-sub am-collapse" id="collapse-nav-0">
-                            <li><a href="车源管理-已审核车源.html"><span class="iconfont icon-shenhechenggong"></span> 已审核车源</a></li>
-                            <li><a href="车源管理-待审核车源.html"><span class="iconfont icon-daishenhe"></span> 待审核车源</a></li>
-                        </ul>
-                    </li>
-                    <li class="admin-parent"><a class="am-cf" data-am-collapse="{target: '#collapse-nav-1'}"><span class="iconfont icon-xiaoshouguanli01"></span> 销售管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list admin-sidebar-sub am-collapse" id="collapse-nav-1">
-                            <li><a href="销售管理-全部已售车.html"><span class="iconfont icon-03jixieqiugou"></span> 已售车</a></li>
-                        </ul>
-                    </li>
-                    <li class="admin-parent"><a class="am-cf" data-am-collapse="{target: '#collapse-nav-2'}"><span class="iconfont icon-yonghuguanli"></span> 用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list admin-sidebar-sub am-collapse am-in " id="collapse-nav-2">
-                            <li><a class="active" href="用户管理-个人用户.html"><span class="iconfont icon-person"></span> 个人用户</a></li>
-                            <li><a href="用户管理-未认证经纪人.html"><span class="iconfont icon-weishimingrenzheng"></span> 未认证经纪人</a></li>
-                            <li><a href="用户管理-已认证经纪人.html"><span class="iconfont icon-renzheng"></span> 已认证经纪人</a></li>
-                            <li><a href="用户管理-待审核经纪人.html"><span class="iconfont icon-shenhe"></span> 待审核经纪人</a></li>
-                            <li><a href="用户管理-管理员.html"><span class="iconfont icon-guanliyuan"></span> 管理员</a></li>
-                        </ul>
-                    </li>
-                    <li class="admin-parent"><a class="am-cf" data-am-collapse="{target: '#collapse-nav-3'}"><span class="iconfont icon-jiangliguanli"></span> 奖励管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list admin-sidebar-sub am-collapse" id="collapse-nav-3">
-                            <li><a href="奖励管理-认证奖励.html"><span class="iconfont icon-jiangli"></span> 认证奖励</a></li>
-                            <li><a href="奖励管理-车源奖励.html"><span class="iconfont icon-jixieshebeijizhaomingb"></span> 车源奖励</a></li>
-                        </ul>
-                    </li>
-                    <li class="admin-parent"><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4'}"><span class="iconfont icon-peizhi"></span> 配置管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list admin-sidebar-sub am-collapse" id="collapse-nav-4">
-                            <li><a href="配置管理-品牌配置.html"><span class="iconfont icon-pinpai"></span> 品牌配置</a></li>
-                            <li><a href="配置管理-机型配置.html"><span class="iconfont icon-model"></span> 机型配置</a></li>
-                            <li><a href="配置管理-奖励配置.html"><span class="iconfont icon-jiangli"></span> 奖励配置</a></li>
-                        </ul>
-                    </li>
-                    <li class="admin-parent"><a class="am-cf" data-am-collapse="{target: '#collapse-nav-5'}"><span class="iconfont icon-tuwen"></span> 图文管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list admin-sidebar-sub am-collapse" id="collapse-nav-5">
-                            <li><a class="" href="图文管理-全部.html"><span class="iconfont icon-tuwen"></span> 全部图文</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
         </div>
         <!-- sidebar end -->
         <!-- content start -->
@@ -94,22 +52,24 @@
                 <input type="hidden" name="pageSize" value="20" />
                 <input type="hidden" name="type" value="1" />
                 <div class="am-form-group">
-                    <input type="text" name="username" class="am-input-sm" placeholder="请输入姓名搜索">
+                    <input type="text" name="username" class="am-input-sm" placeholder="姓名">
                 </div>
                 <div class="am-form-group">
-                    <select class="J_select am-form-select am-input-sm" name="branch">
+                    <select class="J_select am-form-select am-input-sm e-select-sm" name="branch">
                         <option value="">充值类型</option>
                     </select>
                 </div>
                 <div class="am-form-group">
-                    <select class="J_select am-form-select am-input-sm" name="model">
+                    <select class="J_select am-form-select am-input-sm e-select-sm" name="model">
                         <option value="">支付方式</option>
                     </select>
                 </div>
                 <div class="am-form-group">
-                    <input type="text" name="username" class="am-input-sm" placeholder="请输入姓名搜索">
+                    <input type="text" name="username" class="am-input-sm" placeholder="充值时间" data-am-datepicker="{format: 'yyyy-mm-dd hh:ii'}" readonly>
                 </div>
-                <button class="J_search_btn am-btn am-btn-default am-btn-sm" type="submit">搜索</button>
+                <button class="J_search am-btn am-btn-primary am-btn-sm" type="submit"><i class="iconfont">&#xe602; </i>查询</button>
+                <button class="J_export am-btn am-btn-primary am-btn-sm" type="submit"><i class="iconfont">&#xe600; </i>导出表格</button>
+                <a href="" class="am-btn am-btn-primary am-btn-sm" type="submit"><i class="iconfont">&#xe601; </i>新增</a>
             </form>
             <hr>
             <div class="am-g">
