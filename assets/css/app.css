@@ -223,3 +223,30 @@ hr {
 .e-select-sm {
     padding: .6rem 1.5rem .6rem .6rem !important;
 }
+
+.e-tab {
+    overflow: hidden;
+}
+
+.e-tab li {
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.e-tab li a {
+    padding: 0 10px;
+    color: #222;
+    background-color: #eee;
+    line-height: 42px;
+    display: block;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.e-tab li.active a {
+    background-color: #0e90d2;
+    color: #fff;
+}
