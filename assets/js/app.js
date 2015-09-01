@@ -10,100 +10,21 @@
      * @return {[type]} [description]
      */
     (function() {
-        return;
         var menuData = [{
-            name: '车源管理',
+            name: '充值',
+            href: '充值.html',
+            iconClass: 'iconfont icon-01jixiegongying',
+            active: false
+        }, {
+            name: '消费',
+            href: '消费.html',
+            iconClass: 'iconfont icon-01jixiegongying',
+            active: false
+        }, {
+            name: '广告管理',
             href: '#',
             iconClass: 'iconfont icon-01jixiegongying',
-            active: false,
-            children: [{
-                name: '已审核车源',
-                href: '车源管理-已审核车源.html',
-                iconClass: 'iconfont icon-shenhechenggong'
-            }, {
-                name: '待审核车源',
-                href: '车源管理-待审核车源.html',
-                iconClass: 'iconfont icon-daishenhe'
-            }]
-        }, {
-            name: '销售管理',
-            href: '#',
-            iconClass: 'iconfont icon-xiaoshouguanli01',
-            active: false,
-            children: [{
-                name: '已售车',
-                href: '销售管理-全部已售车.html',
-                iconClass: 'iconfont icon-03jixieqiugou'
-            }]
-        }, {
-            name: '用户管理',
-            href: '#',
-            iconClass: 'iconfont icon-yonghuguanli',
-            active: false,
-            children: [{
-                name: '个人用户',
-                href: '用户管理-个人用户.html',
-                iconClass: 'iconfont icon-person'
-            }, {
-                name: '未认证经纪人',
-                href: '用户管理-未认证经纪人.html',
-                iconClass: 'iconfont icon-weishimingrenzheng'
-            }, {
-                name: '已认证经纪人',
-                href: '用户管理-已认证经纪人.html',
-                iconClass: 'iconfont icon-renzheng'
-            }, {
-                name: '待审核经纪人',
-                href: '用户管理-待审核经纪人.html',
-                iconClass: 'iconfont icon-shenhe'
-            }, {
-                name: '管理员',
-                href: '用户管理-管理员.html',
-                iconClass: 'iconfont icon-guanliyuan'
-            }]
-        }, {
-            name: '奖励管理',
-            href: '#',
-            iconClass: 'iconfont icon-jiangliguanli',
-            active: false,
-            children: [{
-                name: '认证奖励',
-                href: '奖励管理-认证奖励.html',
-                iconClass: 'iconfont icon-jiangli'
-            }, {
-                name: '车源奖励',
-                href: '奖励管理-车源奖励.html',
-                iconClass: 'iconfont icon-jixieshebeijizhaomingb'
-            }]
-        }, {
-            name: '配置管理',
-            href: '#',
-            active: false,
-            iconClass: 'iconfont icon-peizhi',
-            children: [{
-                name: '品牌配置',
-                href: '配置管理-品牌配置.html',
-                iconClass: 'iconfont icon-pinpai'
-            }, {
-                name: '机型配置',
-                href: '配置管理-机型配置.html',
-                iconClass: 'iconfont icon-model'
-            }, {
-                name: '奖励配置',
-                href: '配置管理-奖励配置.html',
-                iconClass: 'iconfont icon-jiangli'
-            }]
-        }, {
-            name: '图文管理',
-            href: '图文管理-全部.html',
-            iconClass: 'iconfont icon-tuwen',
-            active: true,
-            children: [{
-                name: '全部图文',
-                href: '图文管理-全部.html',
-                active: true,
-                iconClass: 'iconfont icon-tuwen'
-            }]
+            active: false
         }];
         var i = 0,
             item,
