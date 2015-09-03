@@ -13,17 +13,17 @@
         var menuData = [{
             name: '充值',
             href: '充值.html',
-            iconClass: 'iconfont icon-01jixiegongying',
+            iconClass: 'iconfont icon-chongzhi',
             active: false
         }, {
             name: '消费',
             href: '消费.html',
-            iconClass: 'iconfont icon-01jixiegongying',
+            iconClass: 'iconfont icon-xiaofei',
             active: false
         }, {
             name: '广告管理',
-            href: '#',
-            iconClass: 'iconfont icon-01jixiegongying',
+            href: '广告管理.html',
+            iconClass: 'iconfont icon-unie677',
             active: false
         }];
         var i = 0,
@@ -52,7 +52,7 @@
                 }
                 $li.append($a).append($subul);
             } else {
-                $li = $('<li><a href="' + item.href + '"><span class="' + item.iconClass + '"></span>' + item.name + '</a></li>');
+                $li = $('<li><a href="' + item.href + '"><span class="' + item.iconClass + '"></span> ' + item.name + '</a></li>');
             }
             $ul.append($li);
         }
