@@ -47,71 +47,28 @@
         <!-- content start -->
         <div class="admin-content">
             <div class="am-cf am-padding">
-                <div class="am-fl am-cf"><strong class="am-text-lg">消费</strong></div>
+                <div class="am-fl am-cf"><strong class="am-text-lg">消费</strong> / <small class="am-text-primary">新增消费</small></div>
             </div>
-            <form class="am-form am-form-inline am-margin-left am-margin-right" method="get" action="">
-                <input type="hidden" name="pageIndex" value="0" />
-                <input type="hidden" name="pageSize" value="20" />
-                <div class="am-form-group">
-                    <input type="text" name="username" class="am-input-sm" placeholder="姓名">
-                </div>
-                <div class="am-form-group am-form-icon">
-                    <i class="am-icon-calendar"></i>
-                    <input type="text" name="paytime" class="J_datetime am-input-sm am-form-field" data-provide="datetimepicker-inline" placeholder="充值时间" data-date-format="yyyy-mm-dd hh:ii" data-date-language="zh-CN" data-date-autoclose="1" readonly>
-                </div>
-                <button class="J_search am-btn am-btn-primary am-btn-sm" type="submit"><i class="am-icon-search"></i> 查询</button>
-                <button class="J_export am-btn am-btn-warning am-btn-sm"><i class="am-icon-cloud-upload"></i> 导出表格</button>
-                <a href="充值-新增充值-储值卡.html" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-plus"></i> 新增消费</a>
-            </form>
-            <hr>
             <div class="am-g">
-                <div class="am-u-sm-12">
-                    <table class="am-table am-table-striped am-table-hover table-main">
-                        <thead>
-                            <tr>
-                                <th>消费时间</th>
-                                <th>储值卡ID</th>
-                                <th>消费额度</th>
-                                <th>积分</th>
-                                <th>购气</th>
-                                <th>参与活动</th>
-                                <th>消费人</th>
-                                <th>充值人</th>
-                                <th>电话</th>
-                                <th>车辆信息</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-id="1">
-                                <td class="table-datetime">2014-12-12 12:12:12</td>
-                                <td>E123456</td>
-                                <td>100</td>
-                                <td>10</td>
-                                <td>100kg</td>
-                                <td>10</td>
-                                <td>无</td>
-                                <td>孟星魂</td>
-                                <td>18691954193</td>
-                                <td>东风卡车 陕A123456</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="am-cf">
-                        共 15 条记录
-                        <div class="am-fr">
-                            <ul class="am-pagination">
-                                <li class="am-disabled"><a href="#">«</a></li>
-                                <li class="am-active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">»</a></li>
-                            </ul>
+                <ul class="e-step-3 am-cf am-u-md-10 am-u-md-push-1">
+                    <li class="active"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                </ul>
+            </div>
+            <!--第一步开始-->
+            <div class="am-panel am-panel-default am-margin">
+                <div class="am-panel-hd">储值卡ID:</div>
+                <div class="am-panel-bd">
+                    <form class="J_card_form am-form-inline" role="form" onsubmit="return false">
+                        <div class="am-form-group">
+                            <input type="text" name="card" class="J_card_input am-form-field" placeholder="储值卡ID">
                         </div>
-                    </div>
+                        <button type="submit" class="J_card_submit am-btn am-btn-primary">确定</button>
+                    </form>
                 </div>
             </div>
+            <!--第一步结束-->
         </div>
         <!-- content end -->
     </div>
