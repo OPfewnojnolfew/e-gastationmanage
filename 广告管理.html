@@ -41,7 +41,13 @@
     <div class="am-cf admin-main">
         <!-- sidebar start -->
         <div class="J_menu admin-sidebar am-offcanvas" id="admin-offcanvas">
-            <div class="am-offcanvas-bar admin-offcanvas-bar"></div>
+            <div class="am-offcanvas-bar admin-offcanvas-bar">
+                <ul class="am-list admin-sidebar-list">
+                    <li><a href="充值.html"><span class="iconfont icon-chongzhi"></span> 充值</a></li>
+                    <li><a href="消费.html"><span class="iconfont icon-xiaofei"></span> 消费</a></li>
+                    <li><a href="广告管理.html"><span class="iconfont icon-unie677"></span> 广告管理</a></li>
+                </ul>
+            </div>
         </div>
         <!-- sidebar end -->
         <!-- content start -->
@@ -53,10 +59,10 @@
                 <div class="am-panel-hd">广告位</div>
                 <div class="am-panel-bd">
                     <ul class="ad-uploadcontainer am-avg-md-3 am-avg-sm-3">
-                        <li data-id="111" data-type="1" data-viewDays="11">
+                        <li data-id="111" data-type="1" data-viewDays="11" data-link="http://baidu.com">
                             <div class="ad-uploadify">
                                 <div class="ad-uploadify-view">
-                                    <img src="">
+                                    <a href="#"><img src=""></a>
                                 </div>
                                 <div class="ad-uploadify-content">
                                     <p><span>展示天数:</span>10天</p>
@@ -81,23 +87,23 @@
                 <div class="am-panel-hd">审核记录/历史纪录</div>
                 <div class="am-panel-bd">
                     <ul class="e-tab am-cf">
-                        <li class="active"><a href="">待审核（111）</a></li>
-                        <li><a href="">历史纪录（12）</a></li>
+                        <li class="active"><a href="广告管理.html">待审核（111）</a></li>
+                        <li><a href="广告管理-历史纪录.html">历史纪录（12）</a></li>
                     </ul>
                     <table class="am-table am-table-striped am-table-hover table-main">
                         <thead>
                             <tr>
                                 <th>广告详情</th>
-                                <th>广告位</th>
                                 <th>申请时间</th>
+                                <th>展示天数</th>
                                 <th>状态</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr data-id="1">
                                 <td><a href="">查看</a></td>
-                                <td>广告1</td>
                                 <td class="table-datetime">2014-12-12 12:12:12</td>
+                                <td>10天</td>
                                 <td width="100">审核中</td>
                             </tr>
                         </tbody>
@@ -132,12 +138,31 @@
                     <div class="am-u-md-12">
                         <form class="J_modal_form am-form am-form-horizontal" action="" method="post" onsubmit="return false;">
                             <input type="hidden" name="id" class="J_modal_id" value="5" />
-                            <div class="am-margin">
+                            <!--  <div class="am-margin">
                                 <input type="text" name="name" class="J_modal_time" placeholder="展示时间">
+                            </div> -->
+                            <div class="am-form-group">
+                                <label for="show-days" class="am-u-md-3 am-form-label">展示天数:</label>
+                                <div class="am-u-md-9">
+                                    <input type="text" name="showdays" id="show-days" class="J_modal_time" placeholder="展示天数">
+                                </div>
                             </div>
-                            <div class="J_upload_container am-margin" data-idname="imageid" data-pathname="imagepath"> </div>
-                            <div class="am-margin">
-                                <button type="button" class="J_modal_submit am-btn am-btn-primary">添加/编辑</button>
+                            <div class="am-form-group">
+                                <label for="ads-link" class="am-u-md-3 am-form-label">链接地址:</label>
+                                <div class="am-u-md-9">
+                                    <input type="text" name="adslink" id="ads-link" placeholder="链接地址">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="ads-link" class="am-u-md-3 am-form-label">图片上传:</label>
+                                <div class="am-u-md-9">
+                                    <div class="J_upload_container" data-idname="imageid" data-pathname="imagepath"> </div>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <div class="am-u-md-9 am-u-md-push-3 am-text-left">
+                                    <button type="button" class="J_modal_submit am-btn am-btn-primary">添加/编辑</button>
+                                </div>
                             </div>
                         </form>
                     </div>

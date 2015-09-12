@@ -10,6 +10,7 @@
      * @return {[type]} [description]
      */
     (function() {
+        return;
         var menuData = [{
             name: '充值',
             href: '充值.html',

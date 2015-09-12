@@ -11,15 +11,17 @@ $(function() {
         $modalTitle = $('.am-modal-hd span'),
         $modalId = $('.J_modal_id'),
         $modalTime = $('.J_modal_time'),
+        $modalLink = $('#ads-link'),
         $submit = $('.J_modal_submit'),
         $modalForm = $('.J_modal_form'),
         EDIT = '编辑',
         ADD = '添加',
-        _openUploadDialog = function(id, viewDays, imageId, imagePath) {
+        _openUploadDialog = function(id, viewDays, link, imageId, imagePath) {
             $modalTitle.text(id ? EDIT : ADD);
             $submit.text(id ? EDIT : ADD);
             $modalId.val(id || '');
             $modalTime.val(viewDays || '');
+            $modalLink.val(link || '');
             imageUploadify.set(imageId, imagePath);
             $modal.modal();
         };
@@ -32,7 +34,7 @@ $(function() {
     });
     $('.ad-uploadify-edit').on('click', function() {
         var $li = $(this).closest('li');
-        _openUploadDialog($li.attr('data-id'), $li.attr('data-viewDays'), $li.attr('data-imageId'), $li.attr('data-imagePath'));
+        _openUploadDialog($li.attr('data-id'), $li.attr('data-viewDays'), $li.attr('data-link'), $li.attr('data-imageId'), $li.attr('data-imagePath'));
     });
     $submit.one('click', function() {
         var imageObj = imageUploadify.get();
