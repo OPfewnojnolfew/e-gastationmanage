@@ -17,19 +17,21 @@ ul {
 .admin-header {
     font-size: 1.4rem;
     margin-bottom: 0;
-    background: rgb(0, 134, 196);
+    background: #F39C12;
     color: #FFF;
 }
 
 .admin-logo {
     float: left;
 }
-.admin-logo .logo{
+
+.admin-logo .logo {
     float: left;
-    background: rgb(0, 112, 172);
+    background: rgba(0, 0, 0, 0.1);
     width: 60px;
     height: 50px
 }
+
 .admin-logo .admin-header-title {
     height: 50px;
     line-height: 50px;
@@ -52,7 +54,7 @@ ul {
 }
 
 .admin-header .admin-header-list {
-    border-left: 1px solid rgb(0, 112, 172);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .admin-header .admin-header-list a {
@@ -61,16 +63,17 @@ ul {
 
 .admin-header .admin-header-list .admin-header-user a:focus,
 .admin-header .admin-header-list .admin-header-user a:hover {
-    background: rgb(0, 134, 196);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .admin-header .admin-header-list .admin-header-exit a:focus,
 .admin-header .admin-header-list .admin-header-exit a:hover {
-    background: rgb(0, 112, 172);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .admin-main {
-    background: #f3f3f3;
+    background: #F9FAFC;
+    overflow: hidden;
 }
 
 .admin-menu {
@@ -84,15 +87,27 @@ ul {
     width: 150px;
     min-height: 100%;
     float: left;
-    border-right: 1px solid #cecece;
+    border-right: 1px solid #EEE;
 }
 
 .admin-sidebar-list {
     margin-bottom: 0;
 }
 
+.admin-sidebar-list>li {
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #EEE
+}
+
+.admin-sidebar-list>li:hover>a,
+.admin-sidebar-list>li.active>a {
+    color: #000;
+    background: #F4F4F5;
+}
+
 .admin-sidebar-list li a {
-    background: rgb(219, 224, 229);
+    background: #F9FAFC;
     color: #5c5c5c;
     padding-left: 24px;
 }
@@ -234,11 +249,14 @@ ul {
         display: block;
         position: static;
         background: none;
+        padding-bottom: 2000px;
+        margin-bottom: -2000px;
     }
     .admin-offcanvas-bar {
         position: static;
         width: auto;
         background: none;
+        overflow: hidden;
         -webkit-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -254,6 +272,7 @@ ul {
     }
     .admin-offcanvas-bar {
         background: #f3f3f3;
+        overflow: hidden;
     }
     .admin-offcanvas-bar:after {
         background: #BABABA;
