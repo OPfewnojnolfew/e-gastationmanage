@@ -72,7 +72,7 @@ ul {
 }
 
 .admin-main {
-    background: #F9FAFC;
+    /*background: #F9FAFC;*/
     overflow: hidden;
 }
 
@@ -87,6 +87,7 @@ ul {
     width: 150px;
     min-height: 100%;
     float: left;
+    background: #F9FAFC;
     border-right: 1px solid #EEE;
 }
 
@@ -100,29 +101,16 @@ ul {
     border-bottom: 1px solid #EEE
 }
 
-.admin-sidebar-list>li:hover>a,
-.admin-sidebar-list>li.active>a {
-    color: #000;
-    background: #F4F4F5;
+.admin-sidebar-list>li>a:hover,
+.admin-sidebar-list>li>a.active {
+    color: #F39C12;
+    /*background: #F4F4F5;*/
 }
 
-.admin-sidebar-list li a {
+.admin-sidebar-list>li>a {
     background: #F9FAFC;
     color: #5c5c5c;
     padding-left: 24px;
-}
-
-.admin-sidebar-list li li a {
-    background: #fff;
-    padding-left: 35px;
-}
-
-.admin-sidebar-list li li a.active {
-    color: rgb(0, 134, 196);
-}
-
-.admin-sidebar-list li:first-child {
-    border-top: none;
 }
 
 .admin-sidebar-sub {
@@ -131,10 +119,6 @@ ul {
     box-shadow: 0 16px 8px -15px #e2e2e2 inset;
     background: #ececec;
     /*padding-left: 24px;*/
-}
-
-.admin-sidebar-sub li:first-child {
-    border-top: 1px solid #dedede;
 }
 
 .admin-sidebar-panel {
