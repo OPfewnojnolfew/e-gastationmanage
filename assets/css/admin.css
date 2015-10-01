@@ -427,3 +427,21 @@ gallery.html css
 .fixed-layout .admin-sidebar.am-active {
     z-index: 1600;
 }
+
+.am-btn-primary,
+.am-btn-group .am-btn-primary,
+.am-btn-group-stacked .am-btn-primary {
+    color: #fff;
+    background-color: #F39C12;
+    border-color: #F39C12;
+}
+
+.am-btn-primary:focus,
+.am-btn-primary:hover,
+.am-btn-group .am-btn-primary:focus,
+.am-btn-group .am-btn-primary:hover,
+.am-btn-group-stacked .am-btn-primary:focus,
+.am-btn-group-stacked .am-btn-primary:hover {
+    background-color: #db8d0f;
+    border-color: #db8d0f;
+}
