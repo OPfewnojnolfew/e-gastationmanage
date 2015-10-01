@@ -17,9 +17,19 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.iconfont-xs{
+    font-size: 12px;
+}
 .icon-unie677:before {
     content: "\e600";
+}
+
+.icon-shangjia:before {
+    content: "\e601";
+}
+
+.icon-xiajia:before {
+    content: "\e602";
 }
 
 .icon-chongzhi:before {
@@ -28,6 +38,14 @@
 
 .icon-xiaofei:before {
     content: "\e604";
+}
+
+.icon-icon3:before {
+    content: "\e605";
+}
+
+.icon-icon31:before {
+    content: "\e606";
 }
 
 .notify {

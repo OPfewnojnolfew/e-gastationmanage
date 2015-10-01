@@ -59,7 +59,7 @@
                 <div class="am-panel-hd">广告位</div>
                 <div class="am-panel-bd">
                     <ul class="ad-uploadcontainer am-avg-md-3 am-avg-sm-3">
-                        <li data-id="111" data-type="1" data-viewDays="11" data-link="http://baidu.com">
+                        <li data-id="111" data-type="2" data-viewDays="11" data-link="http://baidu.com">
                             <div class="ad-uploadify">
                                 <div class="ad-uploadify-view">
                                     <a href="#"><img src=""></a>
@@ -70,7 +70,9 @@
                                     </p>
                                     <div class="ad-uploadify-operate">
                                         <a href="javascript:void(0)" class="ad-uploadify-edit am-btn am-btn-warning am-btn-xs"><i class="am-icon-edit"></i> 替换</a>
-                                        <a href="javascript:void(0)" class="ad-uploadify-type am-btn am-btn-danger am-btn-xs">上架/下架</a>
+                                        <!--data-type类型 根绝类型加class am-hide（隐藏）-->
+                                        <a href="javascript:void(0)" class="ad-uploadify-type am-btn am-btn-success am-btn-xs" data-type="1"><i class="iconfont iconfont-xs icon-icon3"></i> 上架</a>
+                                        <a href="javascript:void(0)" class="am-hide ad-uploadify-type am-btn am-btn-danger am-btn-xs" data-type="2"><i class="iconfont iconfont-xs icon-icon31"></i> 下架</a>
                                     </div>
                                 </div>
                             </div>
