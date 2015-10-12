@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E站途加气站管理中心</title>
+    <meta name="description" content="E站途加气站管理中心">
+    <meta name="keywords" content="table">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/datetimepicker/css/amazeui.datetimepicker.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+    <header class="am-topbar admin-header">
+        <div class="admin-logo">
+            <a href="#" class="logo"></a>
+            <a href="#" class="admin-header-title">E站途加气站管理中心</a>
+        </div>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+                <li class="admin-header-user"><a href="javascript:;"><span class="iconfont icon-person"></span> <span>15958093225</span></a></li>
+                <li><span class="split"></span></li>
+                <li class="admin-header-exit am-hide-sm-only"><a href="javascript:;"><span class="am-icon-sign-out"></span> <span class="admin-fullText">退出</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="am-cf admin-main">
+        <!-- sidebar start -->
+        <div class="J_menu admin-sidebar am-offcanvas" id="admin-offcanvas">
+            <div class="am-offcanvas-bar admin-offcanvas-bar">
+                <ul class="am-list admin-sidebar-list">
+                    <li><a href="充值.html" class="active"><span class="iconfont icon-chongzhi"></span> 充值</a></li>
+                    <li><a href="消费.html"><span class="iconfont icon-xiaofei"></span> 消费</a></li>
+                    <li><a href="广告管理.html"><span class="iconfont icon-unie677"></span> 广告管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar end -->
+        <!-- content start -->
+        <div class="admin-content">
+            <div class="am-cf am-padding">
+                <div class="am-fl am-cf"><strong class="am-text-lg">充值</strong></div>
+            </div>
+            <form class="am-form am-form-inline am-margin-left am-margin-right" method="get" action="">
+                <input type="hidden" name="pageIndex" value="0" />
+                <input type="hidden" name="pageSize" value="20" />
+                <div class="am-form-group">
+                    <input type="text" name="username" class="am-input-sm" placeholder="姓名">
+                </div>
+                <div class="am-form-group">
+                    <select class="J_select am-form-select am-input-sm e-select-sm" name="branch">
+                        <option value="">充值类型</option>
+                    </select>
+                </div>
+                <div class="am-form-group">
+                    <select class="J_select am-form-select am-input-sm e-select-sm" name="model">
+                        <option value="">支付方式</option>
+                    </select>
+                </div>
+                <div class="am-form-group am-form-icon">
+                    <i class="am-icon-calendar"></i>
+                    <input type="text" name="paytime" class="J_datetime am-input-sm am-form-field" data-provide="datetimepicker-inline" placeholder="充值时间" data-date-format="yyyy-mm-dd hh:ii" data-date-language="zh-CN" data-date-autoclose="1" readonly>
+                </div>
+                <button class="J_search am-btn am-btn-primary am-btn-sm" type="submit"><i class="am-icon-search"></i> 查询</button>
+                <button class="J_export am-btn am-btn-warning am-btn-sm"><i class="am-icon-cloud-upload"></i> 导出表格</button>
+                <a href="充值-新增充值-储值卡.html" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-plus"></i> 新增充值</a>
+            </form>
+            <hr>
+            <div class="am-g">
+                <div class="am-u-sm-12">
+                    <table class="am-table am-table-striped am-table-hover table-main">
+                        <thead>
+                            <tr>
+                                <th>充值时间</th>
+                                <th>储值卡ID</th>
+                                <th>充值类型</th>
+                                <th>支付金额</th>
+                                <th>充值额度</th>
+                                <th>返现额度</th>
+                                <th>参与活动</th>
+                                <th>充值人</th>
+                                <th>电话</th>
+                                <th>车辆信息</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-id="1">
+                                <td class="table-datetime">2014-12-12 12:12:12</td>
+                                <td>E123456</td>
+                                <td>车主充值</td>
+                                <td>100元</td>
+                                <td>100</td>
+                                <td>10</td>
+                                <td>无</td>
+                                <td>孟星魂</td>
+                                <td>18691954193</td>
+                                <td>东风卡车 陕A123456</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="am-cf">
+                        共 15 条记录
+                        <div class="am-fr">
+                            <ul class="am-pagination">
+                                <li class="am-disabled"><a href="#">«</a></li>
+                                <li class="am-active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    </div>
+    <a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+    <footer>
+        <hr>
+        <p class="am-padding-left">&copy;&nbsp;E站途加气站管理中心&nbsp;&nbsp;&nbsp;&nbsp;全程技术支持：
+            <a href="http://yufukeji.com/" target="_blank">渔夫科技</a>
+        </p>
+    </footer>
+    <!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/datetimepicker/js/amazeui.datetimepicker.min.js"></script>
+    <script src="assets/js/datetimepicker/js/locales/amazeui.datetimepicker.zh-CN.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pay.js"></script>
+</body>
+
+</html>
