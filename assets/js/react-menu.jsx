@@ -4,27 +4,28 @@ var LeafMenu = React.createClass({
     render: function() {
         var leafItem = this.props.leafMenuData;
         return <li>
-                <a class={leafItem.active ? 'active' : ''} href={leafItem.href}>
-                    <span class={leafItem.iconClass}></span>{leafItem.name}
+                <a className={leafItem.active ? 'active' : ''} href={leafItem.href}>
+                    <span className={leafItem.iconClass}></span>{leafItem.name}
                 </a>
             </li>;
     }
 });
 var SubMenu = React.createClass({
     render: function() {
-        var itemName = '{target: \'#' + this.props.pinyinName + '\'}',
-            ulClassName = 'am-list admin-sidebar-sub am-collapse' + (item.active ? ' am-in ' : ''),
+        var subItemData = this.props.subItemData,
+            itemName = '{target: \'#' + subItemData.pinyinName + '\'}',
+            ulClassName = 'am-list admin-sidebar-sub am-collapse' + (subItemData.active ? ' am-in ' : ''),
             items = [];
-        this.props.subItemData.forEach(function(item) {
+        this.props.subItemData.children.forEach(function(item) {
             items.push(<LeafMenu leafMenuData={item}/>);
         });
         return <li>
-                <a class="am-cf" data-am-collapse={itemName}>
-                    <span class={item.iconClass}></span>
-                    {item.name}
-                    <span class="am-icon-angle-right am-fr am-margin-right"></span>
+                <a className="am-cf" data-am-collapse={itemName}>
+                    <span className={subItemData.iconClass}></span>
+                    {subItemData.name}
+                    <span className="am-icon-angle-right am-fr am-margin-right"></span>
                 </a>
-                <ul class={ulClassName} id={subcollapseName}>
+                <ul className={ulClassName} id={itemName}>
                     {items}
                 </ul>
             </li>;
@@ -35,12 +36,12 @@ var Menu = React.createClass({
         var items = [];
         this.props.menuData.forEach(function(item) {
             if (item.children && item.children.length) {
-                items.push(<SubMenu subItemData={item.children} itemName={item.pinyinName}></SubMenu>);
+                items.push(<SubMenu subItemData={item}></SubMenu>);
             } else {
                 items.push(<LeafMenu leafMenuData={item}></LeafMenu>);
             }
         });
-        return <ul class="am-list admin-sidebar-list">
+        return <ul className="am-list admin-sidebar-list">
             {items}
         </ul>;
     }
@@ -177,5 +178,5 @@ var menuData = [{
 }];
 ReactDOM.render(
     <Menu menuData={menuData} />,
-    document.getElementById('container')
+    document.getElementById('menu-container')
 );
