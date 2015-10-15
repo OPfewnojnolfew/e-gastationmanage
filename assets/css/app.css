@@ -17,9 +17,19 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.iconfont-xs{
+    font-size: 12px;
+}
 .icon-unie677:before {
     content: "\e600";
+}
+
+.icon-shangjia:before {
+    content: "\e601";
+}
+
+.icon-xiajia:before {
+    content: "\e602";
 }
 
 .icon-chongzhi:before {
@@ -28,6 +38,14 @@
 
 .icon-xiaofei:before {
     content: "\e604";
+}
+
+.icon-icon3:before {
+    content: "\e605";
+}
+
+.icon-icon31:before {
+    content: "\e606";
 }
 
 .notify {
@@ -146,7 +164,8 @@ hr {
 
 .e-tab {
     padding-left: 0;
-    border-bottom: 1px solid rgb(238, 238, 238);
+    /*border-bottom: 1px solid rgb(238, 238, 238);*/
+    margin: 0 20px -1px;
 }
 
 .e-tab li {
@@ -159,6 +178,7 @@ hr {
     padding: 7px 10px;
     color: #222;
     background-color: #eee;
+    border: 1px solid #eee;
     display: block;
     word-wrap: normal;
     text-overflow: ellipsis;
@@ -167,8 +187,15 @@ hr {
 }
 
 .e-tab li.active a {
-    background-color: #0e90d2;
+    /*background-color: #0e90d2;*/
+    background: #F39C12;
+    border: 1px solid #F39C12;
     color: #fff;
+}
+
+.e-tab-container {
+    border: 1px solid #eee;
+    margin: 0 20px;
 }
 
 .uploadify {
