@@ -17,11 +17,17 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-.iconfont-xs{
+
+.iconfont-xs {
     font-size: 12px;
 }
+
 .icon-unie677:before {
     content: "\e600";
+}
+
+.icon-jikediancanicon15:before {
+    content: "\e607";
 }
 
 .icon-shangjia:before {
@@ -306,4 +312,9 @@ hr {
 .e-countdown a {
     color: #b47227;
     margin: 0 3px;
+}
+
+.e-successface {
+    font-size: 120px;
+    color: #F39C12;
 }
