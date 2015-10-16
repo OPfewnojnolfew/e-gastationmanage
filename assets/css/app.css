@@ -54,21 +54,27 @@
     content: "\e606";
 }
 
-.notify {
+.notify-container {
     position: fixed;
+    left: 50%;
+    z-index: 9999;
+    top: 0;
+}
+
+.notify {
+    position: relative;
     margin: 0 auto;
     top: 15px;
-    left: 0;
-    right: 0;
+    left: -50%;
     text-align: center;
     font-size: 15px;
     opacity: 0;
-    width: 180px;
+    min-width: 180px;
+    float: left;
     padding: 10px;
     border-radius: 3px;
     color: #FFFFFF;
     background: #1F1F1F;
-    z-index: 9999;
     -moz-transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
     -ms-transition: all .25s ease-in-out;

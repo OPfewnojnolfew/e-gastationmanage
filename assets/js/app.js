@@ -369,7 +369,9 @@
                 }
             };
 
-            window.notify = new Notify();
+            window.notify = new Notify({
+                container: $('<div class="notify-container"></div>').appendTo('body')[0]
+            });
 
             notify.info = notify.spawn({
                 addnCls: 'notify-info'
