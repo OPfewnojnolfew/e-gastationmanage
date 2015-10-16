@@ -1,5 +1,5 @@
 var payActions = require('../actions/payActions');
-var SearchBar = React.createClass({
+var PaySearchBar = React.createClass({
     handleClick: function() {
         payActions.getPays();
     },
@@ -14,7 +14,19 @@ var SearchBar = React.createClass({
 });
 var PayTable = React.createClass({
     render: function() {
-        return ();
+        return (
+            <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            </table>
+        );
     }
 });
 var PayFilterTable = React.createClass({
@@ -30,6 +42,11 @@ var PayFilterTable = React.createClass({
         };
     },
     render: function() {
-        return ();
+        return (
+            <div>
+            <PaySearchBar /> 
+            <PayTable />
+            </div>
+        );
     }
 });
