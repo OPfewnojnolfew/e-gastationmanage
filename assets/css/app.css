@@ -22,37 +22,16 @@
     font-size: 12px;
 }
 
-.icon-unie677:before {
-    content: "\e600";
-}
-
-.icon-jikediancanicon15:before {
-    content: "\e607";
-}
-
-.icon-shangjia:before {
-    content: "\e601";
-}
-
-.icon-xiajia:before {
-    content: "\e602";
-}
-
-.icon-chongzhi:before {
-    content: "\e603";
-}
-
-.icon-xiaofei:before {
-    content: "\e604";
-}
-
-.icon-icon3:before {
-    content: "\e605";
-}
-
-.icon-icon31:before {
-    content: "\e606";
-}
+.icon-unie677:before { content: "\e600"; }
+.icon-zongyonghushu:before { content: "\e609"; }
+.icon-jikediancanicon15:before { content: "\e607"; }
+.icon-shangjia:before { content: "\e601"; }
+.icon-xiajia:before { content: "\e602"; }
+.icon-chongzhi:before { content: "\e603"; }
+.icon-xiaofei:before { content: "\e604"; }
+.icon-yue:before { content: "\e608"; }
+.icon-icon3:before { content: "\e605"; }
+.icon-icon31:before { content: "\e606"; }
 
 .notify-container {
     position: fixed;
